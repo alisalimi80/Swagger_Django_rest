@@ -2,10 +2,10 @@
 purpose of this project is show my skills in django rest
 ## Description
 This project includes topics such as:
-1- django rest api
-2- django model design
-3- login and register with JWT
-4- documention my api with swagger
+* 1- django rest api
+* 2- django model design
+* 3- login and register with JWT
+* 4- documention my api with swagger
 ## Getting Started
 
 ### Dependencies

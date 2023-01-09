@@ -21,4 +21,11 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profile
-        fields = ['user','avatar','bio']
+        fields = ['avatar','bio']
+
+
+class UserSerializers(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ["id","username","email","first_name","last_name"]

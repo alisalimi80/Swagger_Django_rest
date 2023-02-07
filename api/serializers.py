@@ -14,7 +14,7 @@ class MovieSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Movie
-        fields = ['name', 'time', 'country', 'description','language','casts','writer']
+        fields = ['id','name', 'time', 'country', 'description','language','casts','writer']
 
 
 class ProfileSerializer(serializers.ModelSerializer):
@@ -29,3 +29,19 @@ class UserSerializers(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ["id","username","email","first_name","last_name"]
+
+#-----------------------------------------------------------------------------------------------------
+#upload file for swagger
+
+class YourSerializer(serializers.Serializer):
+   """Your data serializer, define your fields here."""
+   link_count = serializers.IntegerField()
+
+#-----------------------------------------------------------------------------------------------------
+#upload file serializers
+# Serializers define the API representation.
+
+class UploadSerializer(serializers.Serializer):
+    file_uploaded = serializers.FileField()
+    class Meta:
+        fields = ['file_uploaded']
